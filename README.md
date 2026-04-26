@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PaySplit
 
-## Getting Started
+PaySplit helps you split group expenses, track who owes whom, and settle up easily.
 
-First, run the development server:
+## How to Use the App
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1) Create your profile
+- Open the app.
+- Complete onboarding with your name, email, currency, and avatar color.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2) Login
+Use demo credentials:
+- Email: `test@paysplit.com`
+- Password: `12345678`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3) Create a group
+- Go to **Groups**.
+- Click **New Group**.
+- Add group name, icon, and members.
+- Create the group.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4) Add expenses
+- Open a group.
+- Click **Add Expense**.
+- Enter description, amount, date, category, payer, and split type.
+- Save expense.
 
-## Learn More
+### 5) Check balances
+- In a group, open **Balances**.
+- See simplified “who pays whom”.
+- Record settlements when someone pays back.
 
-To learn more about Next.js, take a look at the following resources:
+### 6) Track activity
+- Group page shows expense + settlement history.
+- Open any expense to view split details, receipt, location, and audit log.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 7) View analytics
+- Go to **Analytics**.
+- Check monthly spend, category breakdown, total paid, and total owed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 8) Manage your profile
+- Go to **Profile**.
+- Edit name/currency/avatar color.
+- Use **Logout** to clear local data and restart.
 
-## Deploy on Vercel
+## Navigation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bottom tabs:
+- **Groups**
+- **Analytics**
+- **Profile**
