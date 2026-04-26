@@ -1,0 +1,107 @@
+:root {
+  /* Radius */
+  --radius: 8px;
+  /* Colors */
+  --background: #f5f5f5;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #f5f5f5;
+  --primary: #5f4fe6;
+  --primary-hover: #4938c2;
+  --primary-foreground: #fff;
+  --secondary: #3a3a3a;
+  --secondary-foreground: #f5f5f5;
+  --muted: #cfccea;
+  --muted-foreground: #5b5686;
+  --accent: #fed13b;
+  --accent-foreground: #000000;
+  --destructive: #ef4444;
+  --destructive-foreground: #fff;
+  /* Border */
+  --border: #3a3a3a;
+
+  /* Typography */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+
+  /* Font Weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.1);
+  
+}
+
+.dark {
+  --background: #0f0f12;
+  --foreground: #f5f5f5;
+  --card: #1a1a1d;
+  --card-foreground: #eaeaea;
+  --primary: #7b6df5;
+  --primary-hover: #5f4fe6;
+  --primary-foreground: #fff;
+  --secondary: #2a2a2e;
+  --secondary-foreground: #eaeaea;
+  --muted: #3d395a;
+  --muted-foreground: #a49fce;
+  --accent: #fed13b;
+  --accent-foreground: #000;
+  --destructive: #ef4444;
+  --destructive-foreground: #fff;
+  --border: #2e2e32;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  line-height: 1.6;
+  font-size: var(--text-md);
+  --webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.card {
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}

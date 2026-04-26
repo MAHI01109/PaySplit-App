@@ -1,0 +1,68 @@
+.container {
+  position: fixed;
+  bottom: 80px; /* Above bottom navigation */
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.fab:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-hover);
+}
+
+.panel {
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border);
+  width: 250px;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--muted-foreground);
+  margin: 0 0 1rem 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

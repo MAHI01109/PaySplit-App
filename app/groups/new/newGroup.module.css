@@ -1,0 +1,158 @@
+.container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: var(--text-2xl);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: var(--font-semibold);
+  font-size: var(--text-md);
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--muted-foreground);
+  margin: 0 0 0.5rem 0;
+}
+
+.input {
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  color: var(--foreground);
+  font-size: var(--text-md);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.iconSelector {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.iconButton {
+  font-size: var(--text-2xl);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.iconButton:hover {
+  background-color: var(--muted);
+}
+
+.selectedIcon {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.membersList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.5rem;
+}
+
+.memberCard {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: var(--card);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.memberCard:hover {
+  background-color: var(--muted);
+}
+
+.selectedMember {
+  background-color: rgba(95, 79, 230, 0.1); /* light primary */
+  border: 1px solid var(--primary);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-bold);
+  color: white;
+  margin-right: 1rem;
+}
+
+.memberInfo {
+  flex: 1;
+}
+
+.memberName {
+  margin: 0;
+  font-weight: var(--font-medium);
+}
+
+.memberEmail {
+  margin: 0;
+  font-size: var(--text-xs);
+  color: var(--muted-foreground);
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.selectedMember .checkbox {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}

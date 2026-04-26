@@ -1,0 +1,109 @@
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+
+.formLabel {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--secondary);
+}
+.formInput,
+.formSelect
+ {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: var(--text-md);
+    color: var(--foreground);
+    background-color: var(--card);
+    transition: border-color 0.2s;
+}
+
+.formInput:focus,
+.formSelect:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.formError {
+    font-size: var(--text-sm);
+    color: var(--destructive);
+}
+
+.colorPicker {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.colorCircle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colorCircle:hover {
+    border-color: 3px solid var(--primary);
+    transform: scale(1.15);
+}
+
+.active::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.active {
+    border: 2px solid var(--primary);
+}
+
+
+/* Submit Button */
+.submitButton {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+
+  background-color: #000;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.submitButton:hover {
+  background-color: #333;
+}
+
+/* Active (click) */
+.submitButton:active {
+  transform: scale(0.97);
+}
+
+/* Disabled state */
+.submitButton:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Optional full width */
+.fullWidth {
+  width: 100%;
+}

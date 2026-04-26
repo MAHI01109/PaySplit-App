@@ -1,0 +1,196 @@
+.container {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: var(--text-2xl);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: var(--font-semibold);
+  font-size: var(--text-md);
+}
+
+.input,
+.select {
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  color: var(--foreground);
+  font-size: var(--text-md);
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.splitTabs {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.splitTab {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: var(--card);
+  border: none;
+  border-right: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.splitTab:last-child {
+  border-right: none;
+}
+
+.activeSplitTab {
+  background-color: var(--primary);
+  color: white;
+}
+
+.splitDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--card);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.splitRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.splitName {
+  font-weight: var(--font-medium);
+}
+
+.splitValue {
+  font-weight: var(--font-bold);
+}
+
+.splitInput {
+  width: 80px;
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  color: var(--foreground);
+  text-align: right;
+}
+
+.inputWithSuffix {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imagePreview {
+  margin-top: 0.5rem;
+  max-width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.imagePreview img {
+  width: 100%;
+  display: block;
+}
+
+.locationList,
+.recentSearches ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: var(--card);
+}
+
+.locationList li,
+.recentSearches li {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  font-size: var(--text-sm);
+}
+
+.locationList li:last-child,
+.recentSearches li:last-child {
+  border-bottom: none;
+}
+
+.locationList li:hover,
+.recentSearches li:hover {
+  background-color: var(--muted);
+}
+
+.selectedLocation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--muted);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  margin-top: 0.5rem;
+}
+
+.selectedLocation button {
+  background: none;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.loadingText {
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+  margin-top: 0.5rem;
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--muted-foreground);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}

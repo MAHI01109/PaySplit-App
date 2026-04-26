@@ -1,0 +1,49 @@
+.bgImg {
+  background-image: url("/images/login-bg.webp");
+  min-height: 100vh;
+  padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  color: var(--card-foreground);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(11px) saturate(100%);
+  -webkit-backdrop-filter: blur(11px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--primary);
+}
+.subtitle {
+  font-size: var(--text-sm);
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+}
+.label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: var(--font-medium);
+  color: var(--secondary);
+}
+

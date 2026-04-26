@@ -1,0 +1,153 @@
+.container {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.headerInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--muted);
+  border-radius: var(--radius-lg);
+}
+
+.title {
+  font-size: var(--text-2xl);
+  margin: 0 0 0.5rem 0;
+}
+
+.description {
+  margin: 0;
+  color: var(--muted-foreground);
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.members {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: var(--text-lg);
+  margin-bottom: 1rem;
+}
+
+.memberAvatars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: var(--font-bold);
+  font-size: var(--text-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.activitySection {
+  margin-bottom: 2rem;
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--card);
+  border-radius: var(--radius-lg);
+  color: var(--muted-foreground);
+  border: 1px dashed var(--border);
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.activityCard {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--card);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a.activityCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--primary);
+}
+
+.activityIcon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--muted);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.activityDetails {
+  flex: 1;
+}
+
+.activityTitle {
+  margin: 0 0 0.25rem 0;
+  font-weight: var(--font-medium);
+}
+
+.activitySub {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+}
+
+.activityDate {
+  font-size: var(--text-xs);
+  color: var(--muted-foreground);
+  white-space: nowrap;
+}
