@@ -83,9 +83,9 @@ export default function ExpenseDetailPage({
 
       <div className={styles.actions}>
         <Link href={`/groups/${groupId}/expense/${expense.id}/edit`}>
-          <Button variant="outline">Edit</Button>
+          <Button >Edit</Button>
         </Link>
-        <Button variant="outline" onClick={() => setShowConfirmDelete(true)} className={styles.deleteBtn}>
+        <Button  onClick={() => setShowConfirmDelete(true)} className={styles.deleteBtn}>
           Delete
         </Button>
       </div>
@@ -96,7 +96,7 @@ export default function ExpenseDetailPage({
             <h3>Confirm Deletion</h3>
             <p>Are you sure you want to delete this expense? This action cannot be undone.</p>
             <div className={styles.modalActions}>
-              <Button variant="outline" onClick={() => setShowConfirmDelete(false)}>Cancel</Button>
+              <Button  onClick={() => setShowConfirmDelete(false)}>Cancel</Button>
               <Button onClick={handleDelete} className={styles.deleteBtn}>Yes, Delete</Button>
             </div>
           </div>

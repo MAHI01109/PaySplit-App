@@ -379,7 +379,7 @@ export default function AddExpensePage({ params }: { params: Promise<{ id: strin
         </div>
 
         <div className={styles.actions}>
-          <Button type="button" variant="outline" onClick={() => router.back()}>Cancel</Button>
+          <Button type="button"onClick={() => router.back()}>Cancel</Button>
           <Button type="submit">Add Expense</Button>
         </div>
       </form>

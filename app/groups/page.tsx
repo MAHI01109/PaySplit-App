@@ -65,7 +65,7 @@ export default function GroupsPage() {
         <div className={styles.emptyState}>
           <p>You don't have any active groups yet.</p>
           <Link href="/groups/new">
-            <Button variant="outline">Create your first group</Button>
+            <Button >Create your first group</Button>
           </Link>
         </div>
       ) : (

@@ -48,9 +48,9 @@ export default function GroupDetailPage({ params }: { params: Promise<{ id: stri
         </div>
         <div className={styles.actions}>
           <Link href={`/groups/${groupId}/balances`}>
-            <Button variant="outline">Balances</Button>
+            <Button >Balances</Button>
           </Link>
-          <Button variant="outline" onClick={handleArchive}>
+          <Button  onClick={handleArchive}>
             {group.archived ? "Unarchive" : "Archive"}
           </Button>
         </div>

@@ -334,7 +334,7 @@ export default function EditExpensePage({ params }: { params: Promise<{ id: stri
         </div>
 
         <div className={styles.actions}>
-          <Button type="button" variant="outline" onClick={() => router.back()}>Cancel</Button>
+          <Button type="button"  onClick={() => router.back()}>Cancel</Button>
           <Button type="submit">Save Changes</Button>
         </div>
       </form>

@@ -89,7 +89,7 @@ export default function BalancesPage({ params }: { params: Promise<{ id: string 
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.title}>Balances</h1>
-        <Button variant="outline" onClick={() => router.back()}>Back to Group</Button>
+        <Button onClick={() => router.back()}>Back to Group</Button>
       </div>
 
       <div className={styles.content}>
@@ -124,7 +124,6 @@ export default function BalancesPage({ params }: { params: Promise<{ id: string 
                     {debt.amount.toFixed(2)}
                   </div>
                   <Button 
-                    size="sm" 
                     onClick={() => {
                       setActiveDebt(debt);
                       setSettleAmount(debt.amount);
@@ -157,7 +156,7 @@ export default function BalancesPage({ params }: { params: Promise<{ id: string 
                 />
               </div>
               <div className={styles.modalActions}>
-                <Button type="button" variant="outline" onClick={() => setActiveDebt(null)}>Cancel</Button>
+                <Button type="button"  onClick={() => setActiveDebt(null)}>Cancel</Button>
                 <Button type="submit">Record Payment</Button>
               </div>
             </form>
@@ -181,6 +180,7 @@ export default function BalancesPage({ params }: { params: Promise<{ id: string 
             ))}
           </select>
           <select
+          
             value={memberB}
             onChange={(e) => setMemberB(e.target.value)}
             className={styles.input}
