@@ -2,6 +2,10 @@
 
 PaySplit helps you split group expenses, track who owes whom, and settle up easily.
 
+## 🚀 Live Demo
+
+👉 https://pay-split-app-psi.vercel.app/onboarding
+
 ## How to Use the App
 
 ### 1) Create your profile
