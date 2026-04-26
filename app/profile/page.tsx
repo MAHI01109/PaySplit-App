@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./profile.module.css";
 import { Button } from "@/app/components/ui/form/Button";
-import { useAuthStore } from "@/store/authStore";
+import { useAuthStore, type User} from "@/store/authStore";
 import { useGroupStore } from "@/store/groupStore";
 import { useExpenseStore } from "@/store/expenseStore";
 import { useSettlementStore } from "@/store/settlementStore";
@@ -16,9 +16,13 @@ export default function Profile() {
   const { settlements } = useSettlementStore();
 
   const [isEditing, setIsEditing] = useState(false);
-  const [editData, setEditData] = useState({
+  const [editData, setEditData] = useState<{
+    name: string;
+    currency: User["currency"];
+    avatarColor: string;
+  }>({
     name: user?.name || "",
-    currency: user?.currency || "INR",
+    currency: user?.currency ?? "INR",
     avatarColor: user?.avatarColor || avatarColors[0],
   });
 
@@ -73,7 +77,7 @@ export default function Profile() {
               />
               <select
                 value={editData.currency}
-                onChange={(e) => setEditData({ ...editData, currency: e.target.value })}
+                onChange={(e) => setEditData({ ...editData, currency: e.target.value as User["currency"] })}
                 className={styles.select}
               >
                 <option value="INR">INR</option>
